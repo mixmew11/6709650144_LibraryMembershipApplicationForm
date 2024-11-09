@@ -3,9 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LibraryMembershipApplicationForm</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1> Library Membership Form</h1>
+    </header>
     
+    <main>
+        <form>
+
+            <label for="FNameth"><span>*</span> ชื่อ(TH)</label>
+            <input type="text" id="FNameth" name="Fnameth" required>
+            
+
+            <label for="LNameth"><span>*</span> นามสกุล(TH)</label>
+            <input type="text" id="LNameth" name="LNameth" required>
+
+
+            <label for="FNameen"><span>*</span> FirstName(EN)</label>
+            <input type="text" id="FNameen" name="FNameen" required>
+
+
+            <label for="LNameen"><span>*</span> LastName(EN)</label>
+            <input type="text" id="LNameen" name="LNameen" required>
+
+            <label for="gender"><span>*</span> เพศ/Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>เลือกเพศ/pick up</option>
+                <option value="male">ชาย/male</option>
+                <option value="female">หญิง/female</option>
+                <option value="others">อื่นๆ/others</option>
+            </select>
+
+            <label for="SID"><span>*</span> รหัสนักศึกษา/Student ID </label>
+            <input type="number" id="SID" name="SID" required>
+
+            <label for="Faculty"><span>*</span> คณะที่ศึกษา/Faculty</label>
+            <input type="text" id="Faculty" name="Faculty" required>
+        
+            <label for="mail"><span>*</span> ที่อยู่อีเมล/E-mail Address</label>
+            <input type="email" id="mail" name="mail" required>
+
+            <label for="dob"><span>*</span> วันเดือนปีเกิด/Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+            
+            <label for="interesting"><span>*</span> ประเภทของหนังสือที่สนใจ/interesting book type</label>
+            <select id="interesting" name="interesting" required>
+                <option value="" disabled selected>เลือกประเภท/pick up</option>
+                <option value="Thriller">สืบสวนสอบสวน/Thriller</option>
+                <option value="Mystery">ลึกลับ/Mystery</option>
+                <option value="Thriller">ระทึกขวัญ/Thriller:</option>
+                <option value="Fantasy">แฟนตาซี/Fantasy</option>
+                <option value="Sci-Fi">ไซไฟ/Sci-Fi</option>
+                <option value="Historical">ประวัติศาสตร์/Historical</option>
+                <option value="Romance">โรแมนติก/Romance</option>
+                <option value="Adventure">ผจญภัย/Adventure</option>
+                <option value="Horror">สยองขวัญ/Horror</option>
+                <option value="Children">สำหรับเด็ก/Children's Books</option>
+                <option value="others">อื่นๆ/others</option>
+            </select>
+
+            <label for="follownews"><span>*</span> ต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่<br>Would you like to receive news and information from the library via email?</label>
+            <input type="checkbox" id="follownews" name="follownews" required>
+        
+            <button type="submit"> submit </button>
+        </form>
+    </main>
+    <footer>
+        <h2>Contact info: </h2>
+        <p>
+            Email: xxxxxxxxxxxxxxx<br>
+            Facebook: xxxxxxxxxxxxxxx<br>
+            Line: xxxxxxxxxxxxxxx
+        </p>
+    </footer>
 </body>
 </html>
